@@ -16,5 +16,7 @@ public class Navigate {
         driver.navigate().forward();
         driver.navigate().refresh();
 
+        driver.close();
+
     }
 }
