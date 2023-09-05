@@ -1,6 +1,7 @@
 package seleniumJUnit;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +14,10 @@ public class C01_TestNotasyonu {
     // Simdiye kadar Java'da bir class'in calismasi icin main method sarttir diyorduk
     //@Test notasyonu ile bu mecburiyet bitti
 
-    public static void main(String[] args) {
+
+
+    @Test
+    public void test01() {
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
